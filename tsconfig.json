@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "lib": ["ESNext"],
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "outDir": "./build",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "alwaysStrict": true, //soft check
+    "baseUrl": "./src/",
+    "paths": {
+      "@models": ["src/models/*"],
+      "@plugins": ["src/plugins/*"]
+    }
+  }
+}

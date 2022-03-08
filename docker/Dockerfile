@@ -1,0 +1,16 @@
+FROM elsa
+
+ARG USER_DEFAULT=elsa
+ARG USER_GROUP_DEFAULT=elsa
+ENV USER=$USER_DEFAULT
+ENV USER_GROUP=$USER_GROUP_DEFAULT
+ENV HOME=/home/$USER
+
+COPY --chown=${USER}:${USER_GROUP} . app/
+
+WORKDIR ${HOME}/app/
+
+USER ${USER}
+RUN npm ci
+
+CMD ["npm", "start"]

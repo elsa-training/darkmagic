@@ -1,0 +1,36 @@
+{
+  "name": "darkmagic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "darkmagic": "bin/elsa.js"
+  },
+  "scripts": {
+    "start": "node bin/elsa.js"
+  },
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elsa-training/darkmagic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elsa-training/darkmagic/issues"
+  },
+  "homepage": "https://github.com/elsa-training/darkmagic#readme",
+  "dependencies": {
+    "@steffy/core": "^1.9.6",
+    "@steffy/db": "^1.0.16",
+    "@steffy/di": "^1.0.4",
+    "@steffy/http": "^1.9.50",
+    "@steffy/logger": "^1.9.3",
+    "@types/jsonwebtoken": "^8.5.8",
+    "jsonwebtoken": "^8.5.1",
+    "ora": "^6.1.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  }
+}
